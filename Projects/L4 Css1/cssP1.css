@@ -1,0 +1,11 @@
+#container{
+    color:green;
+}
+.leftColumn{
+    color: red;
+}
+div{
+    color: orange;
+}
+
+/* # is for id="" and . is for class="" */
