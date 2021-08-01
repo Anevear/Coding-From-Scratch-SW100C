@@ -1,1 +1,0 @@
-Test Pages are my study examples. They are used as my Ref for different elements and how to code them. I will set up a Html folder and then a Css folder for orgnization.
