@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mixed Practice</title>
+    </head>
+    <header>
+        <h2>This is my combined practice</h2>
+    </header>
+    <body>
+        <section>
+            <header>
+                <h2>Input Validation Form</h2>
+            </header>
+            <form>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required/>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required/> 
+                <input type="number" name="age" id="age" placeholder="Age" min="13" max="120"/> 
+                <input type="url" name="url" id="FB" placeholder="FaceBook Profile"/>
+                <input type="tel" name="phoneNumber" id="Phone" placeholder="Phone Number"/>
+                <input type="email" name="email" id="email" placeholder="Email Address"/>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section>
+            <header>
+                <h2>Table Render</h2>
+            </header>
+            <!-- what I wanted to happen below here didnt work when I was trying to call the user inputs -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Input</th>
+                        <th>Col 2 Numbered</th>
+                        <th>Col 3 Leter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div id="firstName"></div>
+                            <div id="lastName"></div>
+                        </td>
+                        <td>1</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td><div id="age"></div></td>
+                        <td>2</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="FB">
+                                <ul>
+                                    <li><a href="#id=FB" target="_blank">Your FaceBook</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>3</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td><div id="Phone"></div></td>
+                        <td>4</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td><div id="email"></div></td>
+                        <td>5</td>
+                        <td>E</td>
+                    </tr>
+                </tbody>
+            </table>     
+        </section>
+        <section>
+            <header>
+                <h2>Text Area Box</h2>
+            </header>
+            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+        </section>
+    </body>
+</html>

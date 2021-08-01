@@ -1,0 +1,19 @@
+#p1{
+    width: 200px;
+    padding: 10px;
+}
+
+#p2{
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+#d2{
+    width: 200px;
+    padding: 10px;
+    float: right;
+}
+h1{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
