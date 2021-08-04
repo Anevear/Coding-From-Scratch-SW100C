@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+
+    <body>
+        <button id="clickButton">Click Me!</button>
+        <script>
+            var button = document.getElementById("clickButton");
+
+            button.addEventListener("click", function (event){
+                console.log(event.target.innerHTML);
+            });
+                //when the button is clicked the console will be sent Click Me! so convoluted...  
+
+
+            // button.onclick = handleClick; 
+            // button is the object onclick property assigns the function called handleClick to the action/event [ "()" calls a function]
+
+            // function handleClick(event){
+            //     console.log(event.target.innerHTML);
+            // }
+           
+        </script>
+    </body>
+</html>
