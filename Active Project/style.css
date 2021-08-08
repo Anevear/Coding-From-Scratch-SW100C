@@ -1,0 +1,91 @@
+img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    background-color: coral;
+}
+#postFullName{
+    display: inline;
+    margin-top: 30px;
+    margin-right: 60px;
+    background-color: azure;
+    font-weight: bolder;
+    font-size: 1.5em;
+    float: right;
+}
+
+.infoDump{
+    
+}
+
+#postAge{
+    background-color: aqua;
+}
+
+#postPhoneNumber{
+    background-color: blueviolet;
+}
+
+#postAddress{
+    background-color: red;
+}
+    
+#idCard {
+    font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    height: 14em;
+    width: 25em;
+}
+
+body{
+    position:absolute;
+    left: 39%;
+}
+
+/* html{
+    font-family: 'Encode Sans Condensed', sans-serif;
+
+            <p id="postFullName"></p>
+            <P id="postAge"></P>
+            <p id="postPhoneNumber"></p>
+            <P id="postAddress"></P>
+
+
+} */
+
+
+nav{
+    margin-left: 100px;
+    margin-top: 45px;
+    padding: 10px 15px 20px 25px;
+}
+
+h1{
+   margin: 0px 10px;
+   padding: 10px 20px;
+}
+
+article{
+    margin: 25px 50px 75px 100px;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-style: solid;
+    background-color: cyan;
+}
+
+p{
+    font-size: 18px;
+    color: blue;
+}
+    
+
+p{
+    border-style: dashed solid;
+    border-width: 2px medium;
+    border-color: red;
+}
+
+body{
+    background-color: rgb(18, 105, 139);
+    border: 2px dotted rgb(18, 105, 139);    
+}
