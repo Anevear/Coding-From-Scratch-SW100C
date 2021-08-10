@@ -1,0 +1,36 @@
+nav{
+    margin-left: 100px;
+    margin-top: 45px;
+    padding: 10px 15px 20px 25px;
+}
+
+h1{
+   margin: 0px 10px;
+   padding: 10px 20px;
+}
+
+article{
+    margin: 25px 50px 75px 100px;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-style: solid;
+    background-color: cyan;
+}
+
+
+    
+html{
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+p{
+    border-style: dashed solid;
+    border-width: 2px medium;
+    border-color: red;
+    font-size: 18px;
+    color: blue;
+}
+
+body{
+    border: 2px dotted peachpuff;    
+}

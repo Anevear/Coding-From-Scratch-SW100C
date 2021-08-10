@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mixed Practice</title>
+    </head>
+    <header>
+        <h2>This is my combined practice</h2>
+    </header>
+    <body>
+        <section>
+            <header>
+                <h2>Input Validation Form</h2>
+            </header>
+            <form>
+                <input type="text" id="firstName" placeholder="First Name" required/><br>
+                <input type="text" id="lastName" placeholder="Last Name" required/> <br>
+                <input type="number" id="age" placeholder="Age" min="13" max="120"/> <br>
+                <input type="url" id="FB" placeholder="FaceBook Profile"/><br>
+                <input type="tel" id="Phone" placeholder="Phone Number"/><br>
+                <input type="email" id="email" placeholder="Email Address"/><br>
+                <button type="button" onclick="fillOut()">Let's do this!</button>
+            </form>
+        </section>
+        <section>
+            <header>
+                <h2>Table Render</h2>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Input</th>
+                        <th>Col 2 Numbered</th>
+                        <th>Col 3 Leter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="postFullName"></td>
+                        <td>1</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td id="postAge"></td>
+                        <td>2</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <!-- what I wanted to happen with the fb addy didnt work -->
+                        <td>
+                            <div>
+                                <ul>
+                                    <li><a href="#id=FB" target="_blank" id="FB">Your FaceBook</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>3</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td id="postPhone"></td>
+                        <td>4</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td id="postEmail"></td>
+                        <td>5</td>
+                        <td>E</td>
+                    </tr>
+                </tbody>
+            </table>     
+        </section>
+        <section>
+            <header>
+                <h2>Text Area Box</h2>
+            </header>
+            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+        </section>
+
+        <script>
+            function fillOut(){
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var email = document.getElementById("email").value;
+
+                document.getElementById("postFullName").innerHTML = firstName + " " + lastName;
+                document.getElementById("postEmail").innerHTML = email;
+
+                var age = parseInt(document.getElementById("age").value);
+                var phoneNumber = parseInt(document.getElementById("Phone").value);
+                
+                var numberArray = [];
+    
+                numberArray.push(age, phoneNumber);
+                
+                function loopingThroughArray(){
+                    for(var i = 0; i < numberArray.length; i++){
+                        if(numberArray[i] > 120){
+                            document.getElementById("postAge").innerHTML = age;
+                        }
+                        else{
+                            document.getElementById("postPhone").innerHTML = phoneNumber;
+                        }
+                    }
+                }
+                loopingThroughArray(numberArray)
+            }
+        </script>
+
+    </body>
+</html>

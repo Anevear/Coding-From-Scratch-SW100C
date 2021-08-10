@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Retrieving Text</title>
+    </head>
+
+    <body>
+
+        <P id="paragraph">I am a paragraph</P>
+
+        <script>
+
+           var text = document.getElementById("paragraph").innerHTML;
+           document.getElementById("paragraph").innerHTML = text + " and I am awesome!";
+
+        </script>
+    </body>
+</html>
+
+<!-- all that does is take the long road to <p> I am a paragraph and I am awesome </p> "i am a para" gets turned into a variable that is then reworked in the .js  -->

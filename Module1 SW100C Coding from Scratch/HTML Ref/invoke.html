@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Invoking Functions</title>
+    </head>
+
+    <body>
+        <script>
+            
+        
+            var myNumber = 5;
+            function doSomething(){
+                var myNumber = 3;
+                return myNumber;
+            }
+            doSomething();
+            console.log(myNumber);
+            
+            
+            
+            function fullName(firstName, lastName){
+                return firstName + " " + lastName;
+            }
+            var myString = fullName("John", "Smith");
+            console.log(myString);
+
+
+            function addNumbers(){
+                alert(2+3);
+            }
+        </script>
+        <Button onclick="addNumbers()">Add!</Button>
+
+
+    
+    </body>
+</html>

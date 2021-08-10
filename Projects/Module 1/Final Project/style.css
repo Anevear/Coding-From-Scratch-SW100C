@@ -1,0 +1,39 @@
+img{
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+#postFullName{
+    margin-top: 30px;
+    margin-right: 60px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    float: right;
+}
+#postAge{
+    margin-top: 100px;
+}
+#idCard {
+    font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    height: 14em;
+    width: 25em;
+    background-color: aqua;
+}
+body{
+    position:absolute;
+    left: 39%;
+    text-align: center;
+    background-color: rgb(131, 32, 32);
+}
+label{
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    color: blue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    text-align: left;
+}
